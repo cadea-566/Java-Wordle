@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.playController">
+   <center>
+      <Pane fx:id="BG" prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="scrLbl" layoutX="39.0" layoutY="40.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="r3" arcHeight="5.0" arcWidth="5.0" fill="#787a7b" height="90.0" layoutX="278.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+            <Rectangle fx:id="r4" arcHeight="5.0" arcWidth="5.0" fill="#787a7b" height="90.0" layoutX="347.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+            <Rectangle fx:id="r5" arcHeight="5.0" arcWidth="5.0" fill="#787a7b" height="90.0" layoutX="417.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+            <Rectangle fx:id="r2" arcHeight="5.0" arcWidth="5.0" fill="#787a7b" height="90.0" layoutX="208.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+            <Rectangle fx:id="r1" arcHeight="5.0" arcWidth="5.0" fill="#787a7b" height="90.0" layoutX="138.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+            <Label fx:id="g1" alignment="CENTER" layoutX="138.0" layoutY="50.0" prefHeight="90.0" prefWidth="60.0">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label fx:id="g2" alignment="CENTER" layoutX="209.0" layoutY="51.0" prefHeight="90.0" prefWidth="60.0">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label fx:id="g3" alignment="CENTER" layoutX="279.0" layoutY="51.0" prefHeight="90.0" prefWidth="60.0">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label fx:id="g4" alignment="CENTER" layoutX="348.0" layoutY="50.0" prefHeight="90.0" prefWidth="60.0">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label fx:id="g5" alignment="CENTER" layoutX="417.0" layoutY="50.0" prefHeight="90.0" prefWidth="60.0">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Line endX="-24.0" endY="17.999984741210938" layoutX="268.0" layoutY="187.0" startX="-116.79998779296875" startY="17.999984741210938" />
+            <Label fx:id="gL1_1" alignment="BOTTOM_CENTER" layoutX="148.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL1_2" alignment="BOTTOM_CENTER" layoutX="168.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL1_3" alignment="BOTTOM_CENTER" layoutX="188.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL1_4" alignment="BOTTOM_CENTER" layoutX="208.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL1_5" alignment="BOTTOM_CENTER" layoutX="228.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gWord" focusTraversable="false" layoutX="30.0" layoutY="124.0" text="Label" visible="false" />
+            <Label fx:id="aWord" layoutX="30.0" layoutY="151.0" text="Label" visible="false" />
+            <Label fx:id="message" layoutX="260.0" layoutY="168.0" text="YOU WIN" visible="false">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="gButton" focusTraversable="false" layoutX="503.0" layoutY="60.0" mnemonicParsing="false" onAction="#guess" text="Guess" textFill="#f6ff00" />
+            <Button fx:id="reset" focusTraversable="false" layoutX="503.0" layoutY="108.0" mnemonicParsing="false" onAction="#reset" text="RESET" visible="false" />
+            <Line endX="-24.0" endY="17.999984741210938" layoutX="487.0" layoutY="187.0" startX="-116.79998779296875" startY="17.999984741210938" />
+            <Label fx:id="gL2_1" alignment="BOTTOM_CENTER" layoutX="367.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL2_2" alignment="BOTTOM_CENTER" layoutX="387.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL2_3" alignment="BOTTOM_CENTER" layoutX="407.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL2_4" alignment="BOTTOM_CENTER" layoutX="427.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL2_5" alignment="BOTTOM_CENTER" layoutX="447.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-24.0" endY="17.999984741210938" layoutX="268.0" layoutY="264.0" startX="-116.79998779296875" startY="17.999984741210938" />
+            <Label fx:id="gL5_1" alignment="BOTTOM_CENTER" layoutX="148.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL5_2" alignment="BOTTOM_CENTER" layoutX="168.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL5_3" alignment="BOTTOM_CENTER" layoutX="188.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL5_4" alignment="BOTTOM_CENTER" layoutX="208.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL5_5" alignment="BOTTOM_CENTER" layoutX="228.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-24.0" endY="17.999984741210938" layoutX="487.0" layoutY="264.0" startX="-116.79998779296875" startY="17.999984741210938" />
+            <Label fx:id="gL6_1" alignment="BOTTOM_CENTER" layoutX="367.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL6_2" alignment="BOTTOM_CENTER" layoutX="387.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL6_3" alignment="BOTTOM_CENTER" layoutX="407.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL6_4" alignment="BOTTOM_CENTER" layoutX="427.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL6_5" alignment="BOTTOM_CENTER" layoutX="447.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-24.0" endY="17.999984741210938" layoutX="270.0" layoutY="225.0" startX="-116.79998779296875" startY="17.999984741210938" />
+            <Label fx:id="gL3_1" alignment="BOTTOM_CENTER" layoutX="150.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL3_2" alignment="BOTTOM_CENTER" layoutX="170.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL3_3" alignment="BOTTOM_CENTER" layoutX="190.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL3_4" alignment="BOTTOM_CENTER" layoutX="210.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL3_5" alignment="BOTTOM_CENTER" layoutX="230.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-24.0" endY="17.999984741210938" layoutX="487.0" layoutY="225.0" startX="-116.79998779296875" startY="17.999984741210938" />
+            <Label fx:id="gL4_1" alignment="BOTTOM_CENTER" layoutX="367.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL4_2" alignment="BOTTOM_CENTER" layoutX="387.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL4_3" alignment="BOTTOM_CENTER" layoutX="407.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL4_4" alignment="BOTTOM_CENTER" layoutX="427.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="gL4_5" alignment="BOTTOM_CENTER" layoutX="447.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="20.0" text="A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button focusTraversable="false" layoutX="32.0" layoutY="83.0" mnemonicParsing="false" onAction="#pause" text="Pause" />
+            <Pane layoutX="118.0" layoutY="370.0" prefHeight="175.0" prefWidth="363.0">
+               <children>
+                  <Button fx:id="A" focusTraversable="false" layoutX="37.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="A" />
+                  <Button fx:id="S" focusTraversable="false" layoutX="67.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="S" />
+                  <Button fx:id="D" focusTraversable="false" layoutX="99.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="D" />
+                  <Button fx:id="F" focusTraversable="false" layoutX="132.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="F" />
+                  <Button fx:id="G" focusTraversable="false" layoutX="162.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="G" />
+                  <Button fx:id="H" focusTraversable="false" layoutX="198.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="H" />
+                  <Button fx:id="J" focusTraversable="false" layoutX="234.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="J" />
+                  <Button fx:id="K" focusTraversable="false" layoutX="266.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="K" />
+                  <Button fx:id="L" focusTraversable="false" layoutX="304.0" layoutY="75.0" mnemonicParsing="false" onAction="#getpressedLetter" text="L" />
+                  <Button fx:id="Z" focusTraversable="false" layoutX="56.0" layoutY="124.0" mnemonicParsing="false" onAction="#getpressedLetter" text="Z" />
+                  <Button fx:id="X" focusTraversable="false" layoutX="88.0" layoutY="124.0" mnemonicParsing="false" onAction="#getpressedLetter" text="X" />
+                  <Button fx:id="C" focusTraversable="false" layoutX="131.0" layoutY="124.0" mnemonicParsing="false" onAction="#getpressedLetter" text="C" />
+                  <Button fx:id="V" focusTraversable="false" layoutX="162.0" layoutY="124.0" mnemonicParsing="false" onAction="#getpressedLetter" text="V" />
+                  <Button fx:id="B" focusTraversable="false" layoutX="199.0" layoutY="124.0" mnemonicParsing="false" onAction="#getpressedLetter" text="B" />
+                  <Button fx:id="N" focusTraversable="false" layoutX="232.0" layoutY="124.0" mnemonicParsing="false" onAction="#getpressedLetter" text="N" />
+                  <Button fx:id="M" focusTraversable="false" layoutX="264.0" layoutY="124.0" mnemonicParsing="false" onAction="#getpressedLetter" text="M" />
+                  <Button fx:id="W" focusTraversable="false" layoutX="51.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="W" />
+                  <Button fx:id="E" focusTraversable="false" layoutX="89.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="E" />
+                  <Button fx:id="R" focusTraversable="false" layoutX="120.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="R" />
+                  <Button fx:id="T" focusTraversable="false" layoutX="152.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="T" />
+                  <Button fx:id="Y" focusTraversable="false" layoutX="188.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="Y" />
+                  <Button fx:id="U" focusTraversable="false" layoutX="220.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="U" />
+                  <Button fx:id="I" focusTraversable="false" layoutX="258.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="I" />
+                  <Button fx:id="O" focusTraversable="false" layoutX="289.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="O" />
+                  <Button fx:id="P" focusTraversable="false" layoutX="326.0" layoutY="33.0" mnemonicParsing="false" onAction="#getpressedLetter" text="P" />
+                  <Button fx:id="Q" focusTraversable="false" layoutX="12.0" layoutY="34.0" mnemonicParsing="false" onAction="#getpressedLetter" text="Q">
+                     <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button focusTraversable="false" layoutX="491.0" layoutY="403.0" mnemonicParsing="false" onAction="#deletefromGuess" text="Backspace" />
+            <Pane fx:id="Pause" layoutX="-1.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" visible="false">
+               <children>
+                  <Button fx:id="reset1" focusTraversable="false" layoutX="250.0" layoutY="88.0" mnemonicParsing="false" onAction="#reset" prefHeight="50.0" prefWidth="100.0" text="RESET">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="mmB" focusTraversable="false" layoutX="416.0" layoutY="88.0" mnemonicParsing="false" onAction="#switchScreen" prefHeight="50.0" prefWidth="130.0" text="Back to Main Menu" />
+                  <Button fx:id="BTG" focusTraversable="false" layoutX="64.0" layoutY="88.0" mnemonicParsing="false" onAction="#unpause" prefHeight="50.0" prefWidth="130.0" text="Back to Game" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#1f93ff00" height="49.0" layoutX="65.0" layoutY="89.0" stroke="BLACK" strokeMiterLimit="20.0" strokeType="INSIDE" strokeWidth="3.0" width="129.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#1f93ff00" height="49.0" layoutX="416.0" layoutY="89.0" stroke="BLACK" strokeMiterLimit="20.0" strokeType="INSIDE" strokeWidth="3.0" width="129.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#1f93ff00" height="50.0" layoutX="250.0" layoutY="89.0" stroke="BLACK" strokeMiterLimit="20.0" strokeType="INSIDE" strokeWidth="3.0" width="100.0" />
+                  <Label fx:id="streakLabel" layoutX="112.0" layoutY="173.0" text="Streak: 0" />
+                  <Label fx:id="gO_1" layoutX="45.0" layoutY="202.0" text="Games Completed on 1st Guess: 0 " />
+                  <Label fx:id="gO_2" layoutX="42.0" layoutY="228.0" text="Games Completed on 2nd Guess: 0" />
+                  <Label fx:id="gO_3" layoutX="44.0" layoutY="253.0" text="Games Completed on 3rd Guess: 0 " />
+                  <Label fx:id="gO_4" layoutX="44.0" layoutY="276.0" text="Games Completed on 4th Guess: 0" />
+                  <Label fx:id="gO_5" layoutX="44.0" layoutY="300.0" text="Games Completed on 5th Guess: 0" />
+                  <Label fx:id="gO_6" layoutX="44.0" layoutY="324.0" text="Games Completed on 6th Guess: 0" />
+                  <TextField fx:id="fileName" focusTraversable="false" layoutX="342.0" layoutY="190.0" promptText="INSERT FILE NAME HERE" />
+                  <Button focusTraversable="false" layoutX="342.0" layoutY="233.0" mnemonicParsing="false" onAction="#saveGame" text="SAVE" />
+                  <Button focusTraversable="false" layoutX="444.0" layoutY="233.0" mnemonicParsing="false" onAction="#loadSave" text="LOAD" />
+                  <Label fx:id="win1" layoutX="149.0" layoutY="408.0" text="YOU GUESSED THE WORD!!!" textFill="#c6d710" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="win2" focusTraversable="false" layoutX="211.0" layoutY="443.0" text="THE WORD WAS: -----" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="InvalidLabel" focusTraversable="false" layoutX="182.0" layoutY="335.0" text="Invalid Guess, Try Again" textFill="RED" visible="false">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
